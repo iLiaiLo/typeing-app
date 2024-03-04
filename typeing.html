@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>typeing</title>
+        <meta name="wievport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="typeing.css">
+    </head>
+    <body>
+        
+            <div class="container">
+                <div class="ready_go" ></div>
+                <div class="dropdown">
+                    <button class="drop_button">choose time</button>
+                    <div class="time_content">
+                        <div class="one">1 min(default)</div>
+                        <div class="two">2 min</div>
+                        <div class="tree">3 min</div>
+                        <div class="five">5 min</div>
+                        <div class="ten">10 min</div>
+                        <div class="drop_custom">
+                            <button class="custom_button">custom</button>
+                            <div class="custom_content">
+                                <label>set minutes</label>
+                        <input type="text" id="minutes" class="mins" autocomplete="off" >
+                        <label>set seconds</label>
+                        <input type="text" id="seconds" class="secs" autocomplete="off">
+                        <button type="button" style="margin-top:10px;padding:10px;" class="set" id="set">set</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" class="random_type" readonly="true">
+                <input type="text" class="my_type">
+                <div class="buttons">
+                <button type="button" class="start">start</button>
+                <button type="button" class="reset" >reset</button>
+                </div>
+            <div class="word_count">
+                <span>number of words typed</span><input type="text" name="name" readonly="true" class="count" value="0" >
+                </div>
+                <div class="time">1:00</div>
+              
+                
+            </div>
+    
+        </body>
+        <script src="typeing.js"></script>
+</html>
